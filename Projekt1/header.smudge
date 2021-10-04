@@ -1,0 +1,15 @@
+#! /usr/bin/perl -w
+# header.clean
+# Version 1
+#
+# Erstellt am 21.07.2021
+# von yanhar
+# geupdatet am $DATE$
+# von yanhar
+
+use strict;
+use warnings;
+
+while(<>){
+  print;
+}
