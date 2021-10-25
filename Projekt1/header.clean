@@ -13,12 +13,12 @@ use warnings;
 my $date = scalar localtime();
 my $author = "yanhar";
 while(<>){
-  if($_=~m/\$VERSION (\d+).(\d+)\$/){
-    my $subvers = $2+1;
-    my $vers = $1;
-    $_ =~ s/\$VERSION $1.$2\$/\$VERSION $vers\.$subvers\$/;
-  }
-  elsif($_=~m/\$AUTHOR\$/){
+  #if($_=~m/\$VERSION (\d+).(\d+)\$/){
+  #  my $subvers = $2+1;
+  #  my $vers = $1;
+  #  $_ =~ s/\$VERSION $1.$2\$/\$VERSION $vers\.$subvers\$/;
+  #}
+  if($_=~m/\$AUTHOR\$/){
     $_ =~ s/\$AUTHOR\$/\$AUTHOR: $author\$/;
   }
   elsif ($_=~m/\$DATE: [A-Za-z]{3} [A-Za-z]{3} (\d{2}) (\d{2}):(\d{2}):(\d{2}) (\d{4})\$/) {
