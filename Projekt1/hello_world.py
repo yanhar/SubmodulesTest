@@ -5,3 +5,4 @@ if __name__ == "__main__":
     print("changes")
 
     print("Erstes ganz wichtiges Skript")
+    print("wichtige Änderungen")
