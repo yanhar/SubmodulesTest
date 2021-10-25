@@ -11,10 +11,10 @@ use strict;
 use warnings;
 
 while(<>){
-  if($_=~m/\$VERSION (\d+).(\d+)\$/){
-    my $subvers = $2+1;
-    my $vers = $1;
-    $_ =~ s/\$VERSION $1.$2\$/\$VERSION $vers\.$subvers\$/;
-  }
+  #if($_=~m/\$VERSION (\d+).(\d+)\$/){
+  #  my $subvers = $2+1;
+  #  my $vers = $1;
+  #  $_ =~ s/\$VERSION $1.$2\$/\$VERSION $vers\.$subvers\$/;
+  #}
   print;
 }
