@@ -13,3 +13,6 @@ def shiftAnd:
 
 def shiftOr:
     pass
+
+def Test:
+    pass
