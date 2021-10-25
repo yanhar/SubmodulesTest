@@ -6,3 +6,7 @@ if __name__ == "__main__":
 
     print("Erstes ganz wichtiges Skript")
     print("wichtige Änderungen")
+    print("Hallo")
+
+def shiftAnd:
+    pass
