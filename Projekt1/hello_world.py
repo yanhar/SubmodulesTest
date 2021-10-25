@@ -3,3 +3,5 @@
 if __name__ == "__main__":
     print("Hello World!")
     print("changes")
+
+    print("Erstes ganz wichtiges Skript")
