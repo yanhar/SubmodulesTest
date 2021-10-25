@@ -1,3 +1,3 @@
-*.py filter=header2
+#*.py filter=header2
 *.pl filter=header2
 *.java filter=header2
