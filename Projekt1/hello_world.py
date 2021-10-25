@@ -10,3 +10,6 @@ if __name__ == "__main__":
 
 def shiftAnd:
     pass
+
+def shiftOr:
+    pass
