@@ -1,4 +1,4 @@
-# $VERSION 12.13$
+# $VERSION 12.12$
 
 if __name__ == "__main__":
     print("Hello World!")
@@ -15,4 +15,7 @@ def shiftOr:
     pass
 
 def Test:
+    pass
+
+def hallo:
     pass
