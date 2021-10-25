@@ -10,32 +10,13 @@
 use strict;
 use warnings;
 
-# Test get last log file informatoin from logfile
-# open(my $fh, ".git/logs/HEAD"); # Z:/Documents/GitHub/Filter/test.txt
-# my $date;
-# my $author;
-# my $commit;
-# while( ! eof($fh) ) {
-#   my $line = readline($fh);
-#   chomp $line;
-#   my @infos = split(" ", $line);
-#   $date = scalar localtime($infos[4]);
-#   $author = $infos[2];
-#   $commit = $infos[1];
-# }
-# close($fh);
-
-# Test get last log file informatoin from commandline
-# open(my $fh, ">../test.txt");
-# my $cmd = `C:/Users/yanhar/AppData/Local/GitHubDesktop/app-2.9.0/resources/app/git/cmd/git.exe log -1`;
-# print $fh $cmd;
-# close($fh);
-
 my $date = scalar localtime();
 my $author = "yanhar";
 while(<>){
-  if($_=~m/\$DATE\$/){
-    $_ =~ s/\$DATE\$/\$DATE: $date\$/;
+  if($_=~m/\$VERSION (\d+).(\d+)\$/){
+    my $subvers = $2+1;
+    my $vers = $1;
+    $_ =~ s/\$VERSION $1.$2\$/\$VERSION $vers\.$subvers\$/;
   }
   elsif($_=~m/\$AUTHOR\$/){
     $_ =~ s/\$AUTHOR\$/\$AUTHOR: $author\$/;
